@@ -7,12 +7,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "prettier",
-    "plugin:react/recommended",
-    "plugin:import/recommended",
-    "plugin:import/typescript",
-    "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier",
-    "prettier/react"
+    "eslint-config-prettier"
   ],
   "globals": {
     "React": "readonly"
@@ -23,26 +18,8 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-
   "rules": {
-    //   // "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
-    "no-unused-vars": 0, // As example: Will never bug you about unused variables again
-    // allow .js files to contain JSX code
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx", ".js", ".jsx"] }],
-    // prevent eslint to complain about the "styles" variable being used before it was defined
-    "no-use-before-define": ["error", { "variables": false }],
-    // ignore errors for the react-navigation package
-    "react/prop-types": ["error", { "ignore": ["navigation", "navigation.navigate"] }],
-    // ignore errors for import directives
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
+    // "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+    "no-unused-vars": 0 // As example: Will never bug you about unused variables again
   }
 }
