@@ -1,11 +1,12 @@
-import { View, Text } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
-
+import HomeScreen from './sideScreen/HomeScreen';
+const Drawer = createDrawerNavigator();
 const MainScreen = () => {
   return (
-    <View>
-      <Text>MainScreen</Text>
-    </View>
+    <Drawer.Navigator>
+      <Drawer.Screen name="HomeScreen" component={HomeScreen} options={{ headerShown: true }} />
+    </Drawer.Navigator>
   );
 };
 

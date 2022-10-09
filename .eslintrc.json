@@ -19,6 +19,7 @@
   },
   "plugins": ["react"],
   "rules": {
+    "react/prop-types": ["error", { "ignore": ["navigation"] }],
     // "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
     "no-unused-vars": 0 // As example: Will never bug you about unused variables again
   }
